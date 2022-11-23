@@ -1,0 +1,135 @@
+body {
+	background-color: #2a2d2d;
+}
+h1 {
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+	color: #768180;
+	margin-left: 30px;
+}
+span {
+	color: #f4f5f5;
+	font-size: 60px;
+	font-family: 'Damion', cursive;}
+button {
+	font-size: 20px;
+	background-color: #4c5352;
+	width: 50px;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 2px;
+}
+
+.clear,.equals,.zero{
+	flex: 1;
+}
+.oprnds.backSpace{
+	background-color: #4c5352;
+}
+.oprnds.equals {
+	background-color: #b6ee11;
+	 color: #1f201e;
+}
+.oprnds.clear {
+	background-color: #e01f3d;
+/*	color: white;*/
+}
+.oprtrs,.oprnds,.displayer {
+	color: navajowhite;
+	border: solid;
+	border-width: 2px;
+	border-color: #1f201e;
+}
+#operands {
+
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+
+	height: 200px;
+	width: 162px;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10%;
+	
+}
+.displayer {
+	overflow-x:scroll;
+	font-family: 'Signika Negative', sans-serif;
+	font-size: 30px;
+	background-color: #768180;
+	border-radius: 2px;
+	margin-left: -4px;
+
+	width: 208px;
+	height: 70px;
+}
+
+/* height */
+::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey; 
+  border-radius: 2px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1f201e; 
+  border-radius: 2px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a2a59d; 
+
+}
+
+.numRow {
+	display: flex;
+	flex-direction: row;
+	width: 162px;
+}
+.oprndsContainer{
+	display: flex;
+	flex-direction: row;
+}
+.operators {
+	display: flex;
+	width: 220px;
+}
+.finalization{
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+
+}
+.backSpace{
+	margin-bottom: 8px;
+	margin-top: 5px;
+}
+.oprnds {
+	background-color: #323636;
+	
+}
+.footer {
+	position: fixed;
+	margin: 0px -8px -8px -8px;
+	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 60px;
+
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	color: #f4f5f5;
+  	background-color: #768180;
+
+}
